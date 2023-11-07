@@ -18,6 +18,7 @@ This document defines the MVP design of an application that organizes notes in l
 | - | - |
 | id | pk |
 | name | text |
+| type | text enum (DAILY/TODO/LIST) |
 
 ### Note
 | name | type |
