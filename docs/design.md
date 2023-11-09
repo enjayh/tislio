@@ -9,7 +9,7 @@ This document defines the MVP design of an application that organizes notes in l
 - I want a simple lists.
 - Be a desktop or mobile application (not a web application).
 - Store data in a single file that the user can manually sync.
-- A note must be in one or more lists.
+- A note must be in one lists.
 
 ## Data Model
 
@@ -26,15 +26,9 @@ This document defines the MVP design of an application that organizes notes in l
 | id | pk |
 | body | text |
 | done | boolean |
+| list_id | fk
 | created_at | datetime |
 | updated_at | datetime (nullable) |
-
-### NoteInList
-| name | type |
-| - | - |
-| id | pk |
-| note_id | fk |
-| list_id | fk |
 
 ## Technologies
 - Electron
